@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="wdith=device-width, initial-scale=1">
+    <title>button</title>
+    <link rel="stylesheet" href="bootstrap\css\bootstrap.min.css">
+    <script type="text/javascript" src="bootstrap\js\jquery-3.2.1.min.js">
+
+    </script>
+    <script type="text/javascript" src="bootstrap\js\bootstrap.min.js">
+
+    </script>
+  </head>
+  <body>
+
+    <!-- //stateful -->
+    <button type="button" id="myButton" data-loading-text="Loading..." class="btn btn-primary" autocomplete="off">
+      Loading state
+    </button>
+
+<!-- single button -->
+    <button type="button" name="button" class="btn btn-primary" data-toggle="button" aira-pressed="true">single button</button>
+
+    <!-- checkbox   -->
+    <div class="btn-group" data-toggle="buttons">
+      <label class="btn btn-primary active">
+        <input type="checkbox" autocomplete="off" checked> Checkbox 1 (pre-checked)
+      </label>
+      <label class="btn btn-primary">
+        <input type="checkbox" autocomplete="off"> Checkbox 2
+      </label>
+      <label class="btn btn-primary">
+        <input type="checkbox" autocomplete="off"> Checkbox 3
+      </label>
+    </div>
+
+    <!-- radiobox   -->
+    <div class="btn-group" data-toggle="buttons">
+      <label class="btn btn-primary active">
+        <input type="radio" autocomplete="off" checked> Checkbox 1 (pre-checked)
+      </label>
+      <label class="btn btn-primary">
+        <input type="radio" autocomplete="off"> Checkbox 2
+      </label>
+      <label class="btn btn-primary">
+        <input type="radio" autocomplete="off"> Checkbox 3
+      </label>
+    </div>
+
+    <div role="group" class="btn-group " >
+      <button type="button" class="btn btn-default">1</button>
+      <button type="button" class="btn btn-default">2</button>
+      <button type="button" class="btn btn-default">3</button>
+    </div>
+
+    <div class="btn-toolbar" role="btn-toolbar">
+      <div role="group" class="btn-group" >
+        <button type="button" class="btn btn-default">1</button>
+        <button type="button" class="btn btn-default">2</button>
+        <button type="button" class="btn btn-default">3</button>
+      </div>
+      <div role="group" class="btn-group" >
+        <button type="button" class="btn btn-default">1</button>
+        <button type="button" class="btn btn-default">2</button>
+        <button type="button" class="btn btn-default">3</button>
+      </div>
+      <div role="group" class="btn-group" >
+        <button type="button" class="btn btn-default">1</button>
+        <button type="button" class="btn btn-default">2</button>
+        <button type="button" class="btn btn-default">3</button>
+      </div>
+    </div>
+
+
+    <script>
+      $('#myButton').on('click', function () {
+        var $btn = $(this).button('loading')
+        setTimeout(function () {
+          $btn.button('reset')
+        }, 2000);
+
+      })
+    </script>
+  </body>
+</html>

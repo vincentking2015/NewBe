@@ -1,2 +1,2 @@
 # NewBe
-一个禅机建议的PHP的MVC框架。
+一个超级简单的PHP的MVC框架。
