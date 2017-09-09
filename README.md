@@ -17,6 +17,7 @@
     config是配置文件
     newbe文件夹是core代码
 
-#安装
+
+安装
 直接下载，在composer.json文件夹使用composer install
 
